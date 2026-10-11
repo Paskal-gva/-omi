@@ -4,13 +4,11 @@ import path from 'path';
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/-omi/',   // ← добавьте эту строку
-  // ...остальное, что уже было
-})
-
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+        return {
+          base: '/-omi/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
